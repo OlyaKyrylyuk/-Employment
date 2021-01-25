@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Home Page 1</h1>
+		<p>
+<a href="/#/add-worker">I haven't been in this list</a></p>
+		<h1>List of workers</h1>
+	<ul>
+	<li ng-repeat='worker in workers'><a href="/#/worker/{{worker._id}}">{{worker.surname}}
+		<a href="/#/worker/delete/{{worker._id}}">
+		<i class="glyphicon glyphicon-remove"></i>
+	</a>
+	</li>
+	</ul>
+</body>
+</html>

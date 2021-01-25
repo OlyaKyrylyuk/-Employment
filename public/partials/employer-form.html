@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<h1>Employer Data</h1>
+ <form>
+<div class="form-group">
+<label>Surname</label>
+<input class="form-control" ng-model="employer.surname"></input>
+</div>
+<div class="form-group">
+<label>Name Company or name of private buisnessman</label>
+<textarea class="form-control" ng-model="employer.name_of_company"></textarea>
+</div>
+<div class="form-group">
+<label>Address</label>
+<input class="form-control" ng-model="employer.adress"></input>
+</div>
+<div class="form-group">
+<label>Phone Number</label>
+<textarea class="form-control" ng-model="employer.phone_number"></textarea>
+</div>
+<input type="button" class="btn btn-primary" value="Save" ng-click="saveempl()"></input>
+</form>
+
+</body>
+</html>

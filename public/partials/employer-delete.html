@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+</head>
+<body>
+	<h1>Delete Employer</h1>
+	<p>Are you sure you want to delete this employer?</p>
+	<ul>
+		<li>Surname: {{employer.surname}}</li>
+		<li>Name of company: {{employer.name_of_company}}</li>
+		<li>Address: {{employer.adress}}</li>
+		<li>Phone number: {{employer.phone_number}}</li>
+
+	</ul>
+	<input type="button" value="Yes, Delete" class="btn btn-danger" ng-click="delete()"/>
+	<a class="btn btn-default" href="/#/">No, Go Back</a>
+</body>
+</html>

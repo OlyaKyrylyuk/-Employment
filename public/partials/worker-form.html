@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<h1>Add an Worker</h1>
+ <form>
+<div class="form-group">
+<label>Surname</label>
+<input class="form-control" ng-model="worker.surname"></input>
+</div>
+<div class="form-group">
+<label>Name</label>
+<textarea class="form-control" ng-model="worker.name"></textarea>
+</div>
+<div class="form-group">
+<label>Father's name</label>
+<input class="form-control" ng-model="worker.fathersname"></input>
+</div>
+<div class="form-group">
+<label>Age</label>
+<textarea class="form-control" ng-model="worker.age"></textarea>
+</div>
+<div class="form-group">
+<label>Work</label>
+<textarea class="form-control" ng-model="worker.work"></textarea>
+</div>
+	<input type="button" class="btn btn-primary" value="Save" ng-click="savework()"></input>
+</form>
+</body>
+</html>

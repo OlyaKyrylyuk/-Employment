@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<h1>Document's List</h1>
+ <form>
+	<div class="form-group">
+        <label>Name of company</label>
+            <select  class="form-control"  ng-model="documentt.employer" >
+                <option ng-repeat='employer in employers'>{{employer.name_of_company}}</option>
+            </select>
+    </div>
+	<div class="form-group">
+		<label>Work</label>
+			<input class="form-control" ng-model="documentt.work"></input>
+	</div>
+	<input type="button" class="btn btn-primary" value="Save" ng-click="savedoc()"></input>
+
+</form>
+<ul>
+	<li ng-repeat='worker in workers'  ng-if="worker.work==documentt.work">
+	<div>
+	<a href="/#/worker/{{worker._id}}">{{worker.work}}
+		<a href="/#/worker/delete/{{worker._id}}">
+		<i class="glyphicon glyphicon-remove"></i>
+	</a>
+	</div>
+	</li>
+	</ul>
+</body>
+</html>

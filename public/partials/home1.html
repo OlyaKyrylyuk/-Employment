@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<h1>Home Page 1</h1>
+		<p>
+       <a href="/#/add-employer">I haven't been in this list</a></p>
+		<h1>List of employers</h1>
+	<ul>
+	<li ng-repeat='employer in employers'><a href="/#/employer/{{employer._id}}">{{employer.name_of_company}}</a>
+		<a href="/#/employer/delete/{{employer._id}}">
+		<i class="glyphicon glyphicon-remove"></i>
+	</a>
+	</li>
+	</ul>
+
+
+</body>
+</html>

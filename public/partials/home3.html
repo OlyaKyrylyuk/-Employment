@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<h1>Home Page 1</h1>
+		<p>
+       <a href="/#/add-documentt">Add document</a></p>
+		<h1>List of documents</h1>
+	<ul>
+	<li ng-repeat='documentt in documents'><a href="/#/documentt/{{documentt._id}}">{{documentt._id}}</a>
+		<a href="/#/documentt/delete/{{documentt._id}}">
+		<i class="glyphicon glyphicon-remove"></i>
+	</a>
+	</li>
+	</ul>
+<label>Choose profession</label>
+<input class="form-control" ng-model="playerName" ></input>
+<input type="button" class="btn btn-primary"  value="Search" ng-click="search()"></input>
+</div>
+<ul>
+	<li ng-repeat='worker in workers'  ng-if="plN==worker.work">
+	<div>
+	<a href="/#/worker/{{worker._id}}">{{worker.work}}
+	</a>
+	</div>
+	</li>
+	</ul>
+</body>
+</html>
